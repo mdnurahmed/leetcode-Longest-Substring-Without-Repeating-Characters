@@ -71,4 +71,4 @@ so if we already calculated j1 = f(i1) for i1 , we can start looking for f(i2) w
 
 We need to have a hashmap/hashset to keep track of if we have any repeated character in the current window . 
 
-Complexity : o(n) time and o(C) space where C is number of possible unique characters 
+Complexity : O(n) time and O(C) space where C is number of possible unique characters 
