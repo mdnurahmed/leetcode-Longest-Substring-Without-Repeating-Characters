@@ -44,11 +44,12 @@ We think of a table like this -
 
 |   i   | j = f(i)| 
 |-------|---------|
-|       |         |
-|       |         |
+|   0   |    ?    |
+|   1   |    ?    |
+|  .... |   ....  |
+|   n   |     ?   |
 
-
-We f(i) is the end index of the longest substring that starts from ith index and maintains all the constraints . 
+Where f(i) is the end index of the longest substring that starts from ith index and maintains all the constraints . 
 
 for exmaple for s = "abca" the table would look like this 
 
@@ -71,4 +72,4 @@ so if we already calculated j1 = f(i1) for i1 , we can start looking for f(i2) w
 
 We need to have a hashmap/hashset to keep track of if we have any repeated character in the current window . 
 
-Complexity : O(n) time and O(C) space where C is number of possible unique characters 
+Complexity : O(n) time and O(C) space where C is number of possible unique characters. 
