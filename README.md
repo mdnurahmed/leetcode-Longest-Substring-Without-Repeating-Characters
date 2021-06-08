@@ -66,7 +66,7 @@ But if we notice in the table we can see , it'll always be
 
 f(i+1) >= f(i) 
 
-so if we already calculated j1 = f(i1) for i1 , we can start looking for f(i2) where i2 = i1+1 from j2 = i1 . So a sliding window or two pointer solution can work for this. 
+so if we already calculated j1 = f(i1) for i1 , we can start looking for f(i2) where i2 = i1+1 from j2 = i1 instead of j2 = i2. So a sliding window or two pointer solution can work for this which will reduce the complexity to linear . 
 
 
 We need to have a hashmap/hashset to keep track of if we have any repeated character in the current window . 
